@@ -27,6 +27,7 @@
   --logo: url(../public/Logo.svg);
   --logo-mini: url(../public/favicon.svg);
   --nav-hover: #9762FD;
+  --header-btn: #9762fd;
   --footer-hover: #9762fd;
   --footer-active: #9762fd;
   --social-hover: rgba(179, 139, 255, 1);
@@ -38,6 +39,7 @@
   --logo: url(../public/Logo-white.svg);
   --logo-mini: url(../public/favicon-white.svg);
   --nav-hover: #B38BFF;
+  --header-btn: #e2d3ff;
   --footer-hover: #e2d3ff;
   --footer-active: #b38bff;
   --social-hover: rgb(151, 98, 253, 1);
@@ -119,11 +121,11 @@
   text-transform: uppercase;
 }
 .header__btn--contact:hover {
-  color: #e2d3ff;
-  border: 1px solid #e2d3ff;
+  color: var(--header-btn);
+  border: 1px solid var(--header-btn);
 }
 .header__btn--login:hover {
-  color: #e2d3ff;
+  color: var(--header-btn);
 }
 .header__burgerButton {
   width: 24px;
