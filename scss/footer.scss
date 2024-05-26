@@ -97,6 +97,7 @@
     font-size: 11px;
   }
 
+<<<<<<< HEAD
   &__socialWrapper {
     gap: 16px;
   }
@@ -111,6 +112,12 @@
     }
   }
 
+=======
+  .footer__socialWrapper {
+    gap: 16px;
+  }
+
+>>>>>>> b518abebdaa72a03028f87a7501a0660885fb903
   &__link {
     &Contacts--phone {
       display: flex;
@@ -227,6 +234,7 @@
     position: absolute;
     bottom: 39px;
     right: 33px;
+<<<<<<< HEAD
     width: 48px;
     height: 48px;
 
@@ -240,6 +248,11 @@
 
 
 
+=======
+    background-image: url(../public/toUpButton.svg);
+    width: 48px;
+    height: 48px;
+>>>>>>> b518abebdaa72a03028f87a7501a0660885fb903
   }
 }
 

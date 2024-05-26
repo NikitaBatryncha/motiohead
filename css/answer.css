@@ -1,68 +1,3 @@
-$font-family-red-hat: "Red Hat Text", sans-serif;
-$font-family-kalam: "Kalam", cursive;
-
-// Цвета Purple
-$purple-100: #F5EFFF;
-$purple-200: #E2D3FF;
-$purple-300: #B38BFF;
-$purple-400: #9762FD;
-$purple-500: #8858E4;
-$purple-600: #794ECA;
-$purple-700: #6941C6;
-$purple-800: #53389E;
-$purple-900: #42307D;
-// Old deep purple (если требуется)
-$old-deep-purple: #42307D;
-
-// Цвета Green
-$green-100: #E9FBF3;
-$green-200: #C5FFE5;
-$green-300: #6CE1AD;
-$green-400: #61CB9C;
-$green-500: #56B48A;
-$green-600: #51A982;
-$green-700: #418768;
-$green-800: #31654E;
-$green-900: #264F3D;
-
-// Old deep green (если требуется)
-$old-deep-green: #264F3D;
-
-// Цвета Yellow
-$yellow-100: #E9FBF3;
-$yellow-200: #C5FFE5;
-$yellow-300: #C5FFE5;
-$yellow-400: #FFD464;
-$yellow-500: #61CB9C;
-$yellow-600: #51A982;
-$yellow-700: #418768;
-$yellow-800: #31654E;
-$yellow-900: #264F3D;
-
-// Old deep yellow (если требуется)
-$old-deep-yellow: #264F3D;
-
-// Градиенты
-$gradient-yellow: #FFF490, #FFE073;
-$gradient-purple: linear-gradient(180deg, #ad83ff 0%, #9762fd 100%);
-$gradient-green: #BFFBE0, #8FE8C0;
-
-// Нейтральные цвета
-$neutral-100: #FFFFFF;
-$neutral-200: #F9F9FF;
-$neutral-300: #F6F6F6;
-$neutral-400: #E7E7E7;
-$neutral-500: #B0B0B0;
-$neutral-600: #9E9E9E;
-$neutral-700: #595959;
-$neutral-800: #464646;
-$neutral-900: #242627;
-
-// Overlay
-$overlay-image: rgba(0, 0, 0, 0.5); // Пример значения overlay
-// Цвет ошибки
-$error-color-100: #F37171;
-
 :root {
   --h1-font-size: 32px;
   --h1-line-height: 140%;
@@ -87,7 +22,6 @@ $error-color-100: #F37171;
   --button-line-height: 160%;
   --cursive-font-size: 12px;
   --cursive-line-height: 170%;
-
   --background-color: transparent;
   --text-color: #242627;
   --logo: url(../public/Logo.svg);
@@ -95,14 +29,10 @@ $error-color-100: #F37171;
   --nav-hover: #9762FD;
   --footer-hover: #9762fd;
   --footer-active: #9762fd;
-<<<<<<< HEAD
   --social-hover: rgba(179, 139, 255, 1);
-=======
-  --social-hover: #B38BFF;
->>>>>>> b518abebdaa72a03028f87a7501a0660885fb903
 }
 
-[data-theme="dark"] {
+[data-theme=dark] {
   --background-color: #242627;
   --text-color: #fff;
   --logo: url(../public/Logo-white.svg);
@@ -110,11 +40,7 @@ $error-color-100: #F37171;
   --nav-hover: #B38BFF;
   --footer-hover: #e2d3ff;
   --footer-active: #b38bff;
-<<<<<<< HEAD
   --social-hover: rgb(151, 98, 253, 1);
-=======
-  --social-hover: #9762FD;
->>>>>>> b518abebdaa72a03028f87a7501a0660885fb903
 }
 
 @media (min-width: 571px) {
@@ -142,5 +68,97 @@ $error-color-100: #F37171;
     --button-line-height: 160%;
     --cursive-font-size: 14px;
     --cursive-line-height: 170%;
+  }
+}
+.answer {
+  margin-bottom: 65px;
+  padding-top: 110px;
+  background-image: url(../public/bg-purple-mini.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -42px;
+  min-height: 548px;
+  text-align: center;
+}
+.answer__container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.answer__subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 13px;
+  color: #fff;
+}
+.answer__title {
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+.answer__button {
+  text-transform: uppercase;
+  border-radius: 100px;
+  padding: 18px 10px;
+  width: 287px;
+  height: 56px;
+  background: #fff;
+  color: #464646;
+  font-weight: 600;
+  -webkit-transform: background 0.8s ease;
+          transform: background 0.8s ease;
+}
+.answer__button:hover {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.answer__button:active {
+  background: #fff;
+  color: #242627;
+  border: 1px solid #242627;
+}
+.answer__button:disabled {
+  color: #b0b0b0;
+  background: #fff;
+  border: 1px solid #242627;
+}
+
+@media (min-width: 571px) {
+  .answer {
+    background-image: url(../public/bg-purple-big.svg);
+    background-position: 0 0;
+    padding-top: 163px;
+  }
+}
+@media (min-width: 900px) {
+  .answer {
+    margin-bottom: 122px;
+    padding-top: 205px;
+    padding-bottom: 218px;
+  }
+  .answer__subtitle {
+    padding-left: 16px;
+    margin-bottom: 23px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+  .answer__title {
+    max-width: 950px;
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
+  .answer__button {
+    margin-left: 17px;
+    width: 270px;
+    height: 64px;
   }
 }
