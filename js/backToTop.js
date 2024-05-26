@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const backToTopBtn = document.querySelector("#toTopButton");
 
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 200) {
+    if (window.innerWidth > 900) {
       backToTopBtn.style.display = "block";
     } else {
       backToTopBtn.style.display = "none";
