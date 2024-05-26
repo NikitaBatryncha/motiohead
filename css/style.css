@@ -212,6 +212,14 @@ button {
   height: 100%;
 }
 
+[data-scroll-container] {
+  overflow: hidden;
+}
+
+[data-scroll-section] {
+  position: relative;
+}
+
 @media (min-width: 900px) {
   body {
     background-image: none;
