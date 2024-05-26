@@ -1,0 +1,178 @@
+:root {
+  --h1-font-size: 32px;
+  --h1-line-height: 140%;
+  --h2-font-size: 24px;
+  --h2-line-height: 160%;
+  --h3-font-size: 20px;
+  --h3-line-height: 140%;
+  --h4-font-size: 18px;
+  --h4-line-height: 160%;
+  --h5-font-size: 16px;
+  --h5-line-height: 170%;
+  --h6-font-size: 16px;
+  --h6-line-height: 160%;
+  --subtitle-font-size: 16px;
+  --subtitle-line-height: 160%;
+  --paragraph-font-size: 13px;
+  --paragraph-line-height: 170%;
+  --paragraph-small-font-size: 11px;
+  --paragraph-small-line-height: 170%;
+  --button-font-size: 13px;
+  --button-small-font-size: 11px;
+  --button-line-height: 160%;
+  --cursive-font-size: 12px;
+  --cursive-line-height: 170%;
+  --background-color: transparent;
+  --text-color: #242627;
+  --logo: url(../public/Logo.svg);
+  --logo-mini: url(../public/favicon.svg);
+  --nav-hover: #9762FD;
+  --footer-hover: #9762fd;
+  --footer-active: #9762fd;
+  --social-hover: #B38BFF;
+}
+
+[data-theme=dark] {
+  --background-color: #242627;
+  --text-color: #fff;
+  --logo: url(../public/Logo-white.svg);
+  --logo-mini: url(../public/favicon-white.svg);
+  --nav-hover: #B38BFF;
+  --footer-hover: #e2d3ff;
+  --footer-active: #b38bff;
+  --social-hover: #9762FD;
+}
+
+@media (min-width: 571px) {
+  :root {
+    --h1-font-size: 64px;
+    --h1-line-height: 140%;
+    --h2-font-size: 40px;
+    --h2-line-height: 140%;
+    --h3-font-size: 32px;
+    --h3-line-height: 150%;
+    --h4-font-size: 24px;
+    --h4-line-height: 150%;
+    --h5-font-size: 20px;
+    --h5-line-height: 150%;
+    --h6-font-size: 18px;
+    --h6-line-height: 150%;
+    --subtitle-font-size: 20px;
+    --subtitle-line-height: 160%;
+    --paragraph-font-size: 16px;
+    --paragraph-line-height: 170%;
+    --paragraph-small-font-size: 14px;
+    --paragraph-small-line-height: 160%;
+    --button-font-size: 16px;
+    --button-small-font-size: 14px;
+    --button-line-height: 160%;
+    --cursive-font-size: 14px;
+    --cursive-line-height: 170%;
+  }
+}
+.motiohead {
+  padding-bottom: 40px;
+  margin-bottom: 64px;
+}
+.motiohead__title {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.motiohead__title span {
+  font-weight: 400;
+}
+.motiohead__descr {
+  margin-bottom: 28px;
+  font-size: var(--h6-font-size);
+  line-height: var(--h6-line-height);
+  line-height: 162%;
+  text-align: center;
+  text-transform: capitalize;
+}
+.motiohead__text {
+  font-size: 16px;
+  line-height: 170%;
+}
+.motiohead__list {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 16px;
+}
+.motiohead__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 16px;
+  min-height: 128px;
+  border-radius: 16px;
+  font-weight: 400;
+  font-size: var(--h6-font-size);
+  line-height: var(--h6-line-height);
+}
+.motiohead__item img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
+}
+.motiohead__item span {
+  font-weight: 500;
+}
+.motiohead__itemGreen {
+  background-color: #e0fff1;
+}
+.motiohead__itemPurple {
+  background-color: #f5efff;
+}
+.motiohead__itemYellow {
+  background-color: #fff8d1;
+}
+
+@media (min-width: 700px) {
+  .motiohead__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 16px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .motiohead__title {
+    max-width: 1141px;
+    letter-spacing: 0.02rem;
+    margin-bottom: 32px;
+  }
+  .motiohead__descr {
+    max-width: 1141px;
+    line-height: 160%;
+    font-size: 20px;
+  }
+  .motiohead__descr::after {
+    content: url(../public/rocket.svg);
+  }
+  .motiohead__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 16px 1fr 16px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .motiohead__descr {
+    text-transform: none;
+  }
+}
+@media (min-width: 1200px) {
+  .motiohead__item {
+    min-height: 191px;
+    padding: 30px;
+  }
+  .motiohead__descr {
+    margin-bottom: 67px;
+  }
+  .motiohead__list {
+    gap: 35px;
+  }
+}

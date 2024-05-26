@@ -1,0 +1,138 @@
+$font-family-red-hat: "Red Hat Text", sans-serif;
+$font-family-kalam: "Kalam", cursive;
+
+// Цвета Purple
+$purple-100: #F5EFFF;
+$purple-200: #E2D3FF;
+$purple-300: #B38BFF;
+$purple-400: #9762FD;
+$purple-500: #8858E4;
+$purple-600: #794ECA;
+$purple-700: #6941C6;
+$purple-800: #53389E;
+$purple-900: #42307D;
+// Old deep purple (если требуется)
+$old-deep-purple: #42307D;
+
+// Цвета Green
+$green-100: #E9FBF3;
+$green-200: #C5FFE5;
+$green-300: #6CE1AD;
+$green-400: #61CB9C;
+$green-500: #56B48A;
+$green-600: #51A982;
+$green-700: #418768;
+$green-800: #31654E;
+$green-900: #264F3D;
+
+// Old deep green (если требуется)
+$old-deep-green: #264F3D;
+
+// Цвета Yellow
+$yellow-100: #E9FBF3;
+$yellow-200: #C5FFE5;
+$yellow-300: #C5FFE5;
+$yellow-400: #FFD464;
+$yellow-500: #61CB9C;
+$yellow-600: #51A982;
+$yellow-700: #418768;
+$yellow-800: #31654E;
+$yellow-900: #264F3D;
+
+// Old deep yellow (если требуется)
+$old-deep-yellow: #264F3D;
+
+// Градиенты
+$gradient-yellow: #FFF490, #FFE073;
+$gradient-purple: linear-gradient(180deg, #ad83ff 0%, #9762fd 100%);
+$gradient-green: #BFFBE0, #8FE8C0;
+
+// Нейтральные цвета
+$neutral-100: #FFFFFF;
+$neutral-200: #F9F9FF;
+$neutral-300: #F6F6F6;
+$neutral-400: #E7E7E7;
+$neutral-500: #B0B0B0;
+$neutral-600: #9E9E9E;
+$neutral-700: #595959;
+$neutral-800: #464646;
+$neutral-900: #242627;
+
+// Overlay
+$overlay-image: rgba(0, 0, 0, 0.5); // Пример значения overlay
+// Цвет ошибки
+$error-color-100: #F37171;
+
+:root {
+  --h1-font-size: 32px;
+  --h1-line-height: 140%;
+  --h2-font-size: 24px;
+  --h2-line-height: 160%;
+  --h3-font-size: 20px;
+  --h3-line-height: 140%;
+  --h4-font-size: 18px;
+  --h4-line-height: 160%;
+  --h5-font-size: 16px;
+  --h5-line-height: 170%;
+  --h6-font-size: 16px;
+  --h6-line-height: 160%;
+  --subtitle-font-size: 16px;
+  --subtitle-line-height: 160%;
+  --paragraph-font-size: 13px;
+  --paragraph-line-height: 170%;
+  --paragraph-small-font-size: 11px;
+  --paragraph-small-line-height: 170%;
+  --button-font-size: 13px;
+  --button-small-font-size: 11px;
+  --button-line-height: 160%;
+  --cursive-font-size: 12px;
+  --cursive-line-height: 170%;
+
+  --background-color: transparent;
+  --text-color: #242627;
+  --logo: url(../public/Logo.svg);
+  --logo-mini: url(../public/favicon.svg);
+  --nav-hover: #9762FD;
+  --footer-hover: #9762fd;
+  --footer-active: #9762fd;
+  --social-hover: #B38BFF;
+}
+
+[data-theme="dark"] {
+  --background-color: #242627;
+  --text-color: #fff;
+  --logo: url(../public/Logo-white.svg);
+  --logo-mini: url(../public/favicon-white.svg);
+  --nav-hover: #B38BFF;
+  --footer-hover: #e2d3ff;
+  --footer-active: #b38bff;
+  --social-hover: #9762FD;
+}
+
+@media (min-width: 571px) {
+  :root {
+    --h1-font-size: 64px;
+    --h1-line-height: 140%;
+    --h2-font-size: 40px;
+    --h2-line-height: 140%;
+    --h3-font-size: 32px;
+    --h3-line-height: 150%;
+    --h4-font-size: 24px;
+    --h4-line-height: 150%;
+    --h5-font-size: 20px;
+    --h5-line-height: 150%;
+    --h6-font-size: 18px;
+    --h6-line-height: 150%;
+    --subtitle-font-size: 20px;
+    --subtitle-line-height: 160%;
+    --paragraph-font-size: 16px;
+    --paragraph-line-height: 170%;
+    --paragraph-small-font-size: 14px;
+    --paragraph-small-line-height: 160%;
+    --button-font-size: 16px;
+    --button-small-font-size: 14px;
+    --button-line-height: 160%;
+    --cursive-font-size: 14px;
+    --cursive-line-height: 170%;
+  }
+}

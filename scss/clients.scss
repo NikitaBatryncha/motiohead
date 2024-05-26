@@ -1,0 +1,69 @@
+@import '../assets/variables.scss';
+
+.clients {
+  margin-bottom: 136px;
+  position: relative;
+  z-index: 10;
+  
+  &__descr {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    width: 267px;
+    height: 24px;
+
+    &::after {
+      content: url(../public/Arrow.svg);
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__wrapper {
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  &__img {
+    &Big {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 571px) {
+  .clients {
+    &__descr {
+      max-width: 319px;
+      width: auto;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .clients {
+    margin-bottom: 255px;
+
+    &__wrapper {
+      gap: 32px;
+    }
+
+    &__img {
+      &Big {
+        display: block;
+      }
+
+      &Mini {
+        display: none;
+      }
+    }
+
+    &__descr {
+      letter-spacing: -0.03rem;
+      margin-bottom: 47px;
+    }
+}
+}

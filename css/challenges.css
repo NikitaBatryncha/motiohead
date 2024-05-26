@@ -1,0 +1,167 @@
+:root {
+  --h1-font-size: 32px;
+  --h1-line-height: 140%;
+  --h2-font-size: 24px;
+  --h2-line-height: 160%;
+  --h3-font-size: 20px;
+  --h3-line-height: 140%;
+  --h4-font-size: 18px;
+  --h4-line-height: 160%;
+  --h5-font-size: 16px;
+  --h5-line-height: 170%;
+  --h6-font-size: 16px;
+  --h6-line-height: 160%;
+  --subtitle-font-size: 16px;
+  --subtitle-line-height: 160%;
+  --paragraph-font-size: 13px;
+  --paragraph-line-height: 170%;
+  --paragraph-small-font-size: 11px;
+  --paragraph-small-line-height: 170%;
+  --button-font-size: 13px;
+  --button-small-font-size: 11px;
+  --button-line-height: 160%;
+  --cursive-font-size: 12px;
+  --cursive-line-height: 170%;
+  --background-color: transparent;
+  --text-color: #242627;
+  --logo: url(../public/Logo.svg);
+  --logo-mini: url(../public/favicon.svg);
+  --nav-hover: #9762FD;
+  --footer-hover: #9762fd;
+  --footer-active: #9762fd;
+  --social-hover: #B38BFF;
+}
+
+[data-theme=dark] {
+  --background-color: #242627;
+  --text-color: #fff;
+  --logo: url(../public/Logo-white.svg);
+  --logo-mini: url(../public/favicon-white.svg);
+  --nav-hover: #B38BFF;
+  --footer-hover: #e2d3ff;
+  --footer-active: #b38bff;
+  --social-hover: #9762FD;
+}
+
+@media (min-width: 571px) {
+  :root {
+    --h1-font-size: 64px;
+    --h1-line-height: 140%;
+    --h2-font-size: 40px;
+    --h2-line-height: 140%;
+    --h3-font-size: 32px;
+    --h3-line-height: 150%;
+    --h4-font-size: 24px;
+    --h4-line-height: 150%;
+    --h5-font-size: 20px;
+    --h5-line-height: 150%;
+    --h6-font-size: 18px;
+    --h6-line-height: 150%;
+    --subtitle-font-size: 20px;
+    --subtitle-line-height: 160%;
+    --paragraph-font-size: 16px;
+    --paragraph-line-height: 170%;
+    --paragraph-small-font-size: 14px;
+    --paragraph-small-line-height: 160%;
+    --button-font-size: 16px;
+    --button-small-font-size: 14px;
+    --button-line-height: 160%;
+    --cursive-font-size: 14px;
+    --cursive-line-height: 170%;
+  }
+}
+.challenges {
+  margin-bottom: 75px;
+}
+.challenges__title {
+  margin-bottom: 37px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+.challenges__title span {
+  font-weight: 500;
+}
+.challenges__wrapper {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 16px;
+}
+.challenges__card {
+  padding: 16px;
+  max-width: 437px;
+  min-height: 116px;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 13px;
+  -webkit-box-shadow: 0 12px 32px 0 rgba(118, 126, 194, 0.12);
+          box-shadow: 0 12px 32px 0 rgba(118, 126, 194, 0.12);
+  background-color: white;
+}
+.challenges__card:first-child {
+  min-height: 124px;
+}
+
+@media (min-width: 571px) {
+  .challenges__wrapper {
+    -ms-grid-columns: 1fr 16px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .challenges__card:last-child {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+@media (min-width: 900px) {
+  .challenges__wrapper {
+    max-width: 890px;
+  }
+  .challenges__title {
+    max-width: 902px;
+  }
+}
+@media (min-width: 1200px) {
+  .challenges {
+    margin-bottom: 128px;
+  }
+  .challenges__title {
+    margin-bottom: 73px;
+  }
+  .challenges__wrapper {
+    max-width: 1390px;
+    -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    height: 224px;
+  }
+  .challenges__card {
+    padding: 32px;
+    width: 437px;
+    height: 192px;
+    font-size: 20px;
+  }
+  .challenges__card:nth-child(1) {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  .challenges__card:nth-child(2) {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  .challenges__card:last-child {
+    grid-column: auto;
+    -ms-grid-column-align: auto;
+        justify-self: auto;
+    -ms-grid-row-align: start;
+        align-self: start;
+  }
+}
