@@ -55,6 +55,9 @@
 .footer__wrapper h3 a:hover {
   color: var(--footer-hover);
 }
+.footer #toTopButton {
+  display: none;
+}
 .footer__wrapper:last-child {
   margin-bottom: 0;
   margin-left: -25px;
@@ -220,6 +223,7 @@
     margin: 0;
   }
   #toTopButton {
+    display: block;
     position: absolute;
     bottom: 39px;
     right: 33px;

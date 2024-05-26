@@ -51,6 +51,10 @@
     }
   }
 
+  #toTopButton {
+    display: none;
+  }
+
   &__wrapper:last-child {
     margin-bottom: 0;
     margin-left: -25px;
@@ -224,6 +228,7 @@
   }
 
   #toTopButton {
+    display: block;
     position: absolute;
     bottom: 39px;
     right: 33px;
@@ -237,9 +242,6 @@
         fill: var(--social-hover)
       }
     }
-
-
-
   }
 }
 
